@@ -53,7 +53,6 @@ public class ItemController {
                 bindingResult.reject("totalPriceMin", new Object[]{10000, resultPrice}, null);
             }
         }
-
         if (bindingResult.hasErrors()) {
             log.info("errors={}", bindingResult);
             return "items/addForm";
